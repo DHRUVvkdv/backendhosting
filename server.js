@@ -3,10 +3,10 @@ const app = express();
 const PORT = 8000;
 
 app.get("/", (req, res) => {
-  res.send("Hello world, let's host this!");
+  res.json({ message: "Hello world, let's host this!" });
 });
 app.get("/test", (req, res) => {
-  res.send("<h1>It's working 🤗</h1>");
+  res.json({ message: "It's working 🤗" });
 });
 
 app.listen(process.env.PORT || PORT, () => console.log(`Listening on ${PORT}`));
