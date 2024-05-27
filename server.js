@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/test", (req, res) => {
-  res.json({ message: "It's working 🤗: AMAN TERI MKC!!" });
+  res.json({ message: "It's working 🤗" });
 });
 
 app.listen(process.env.PORT || PORT, () => console.log(`Listening on ${PORT}`));
